@@ -1,0 +1,15 @@
+{
+  "name": "credit-card-generator",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "author": "Matheus Brehm Barni",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.5",
+    "form-data": "^3.0.0"
+  }
+}
