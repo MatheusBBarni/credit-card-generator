@@ -28,8 +28,14 @@ async function getCreditCard () {
   const $ = cheerio.load(html);
 
   const cardNumber = $('div#cartao_numero').text();
-  const cardExpirationDate = $('div#data_validade').text();
+  const expirationDate = $('div#data_validade').text();
   const cardSecurityCode = $('div#codigo_seguranca').text();
+
+  const expirationDateArr = expirationDate.split('/');
+  const month = expirationDateArr[1];
+  const year = expirationDateArr[2].substr(2, 3);
+
+  const cardExpirationDate = `${month}/${year}`;
 
   return {
     cardNumber,
