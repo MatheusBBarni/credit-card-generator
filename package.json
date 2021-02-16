@@ -1,16 +1,18 @@
 {
-  "name": "credit-card-generator",
+  "name": "pagarme-credit-card-hash-generator",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "main": "src/server.js",
   "author": "Matheus Brehm Barni",
   "license": "MIT",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/server.js"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "form-data": "^3.0.0",
+    "helmet": "^4.4.1",
+    "pagarme": "^4.15.3",
     "puppeteer": "^7.1.0"
   }
 }
